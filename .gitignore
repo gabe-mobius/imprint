@@ -1,0 +1,16 @@
+# Profiles are personal data. Never commit a real one.
+*.profile.json
+!examples/sample.profile.json
+# Cached embedding axes and local state
+*.npz
+.imprint/
+imprint-dashboard.html
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+.pytest_cache/

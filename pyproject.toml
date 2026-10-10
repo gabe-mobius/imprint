@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "imprint-layer"
+version = "0.3.0"
+description = "A personality calibration layer for any chat model: learns how one user wants an assistant to talk, from their own messages."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24"]
+keywords = ["llm", "personalization", "system-prompt", "assistant", "embeddings"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Intended Audience :: Developers",
+]
+
+[project.optional-dependencies]
+minilm = ["sentence-transformers>=2.2"]
+test = ["pytest>=7"]
+
+[project.scripts]
+imprint-dashboard = "imprint.dashboard:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src", "tests"]
