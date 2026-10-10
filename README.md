@@ -1,6 +1,6 @@
 # Imprint
 
-**Tell your bot to be wittier. It stays wittier.**
+**Tell your bot to be wittier. It becomes wittier.**
 
 A personality calibration layer for any chat model. Imprint learns how one person wants an assistant to talk from that person's own messages. It then renders a short plain-text block that you put in the system prompt.
 
